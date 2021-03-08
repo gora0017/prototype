@@ -1,0 +1,249 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+	/* BORDERS, FONTS AND BACKGROUND COLORS*/
+    html, body, div, h1, h2, h3, h4, h5, h6, p, img, nav {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	html,body, input, select, textarea {
+		background: #1c1d26;
+		color: rgba(255, 255, 255, 0.75);
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 15pt;
+		font-weight: 100;
+		line-height: 1.75em;
+	}
+
+    /* dotted lines under clickable links and color change once mouse is hovered over*/
+	a {
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom: dotted 1px;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #e44c65 !important;
+		border-bottom-color: transparent;
+
+		}
+
+    /*heading size and color*/
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+
+	/* Form is put as a column instead of row*/
+	form {
+		margin: 0 0 2em 0;
+	}
+
+	label {
+		color: #ffffff;
+		display: block;
+		font-size: 0.9em;
+		font-weight: 300;
+		margin: 0 0 1em 0;
+	}
+
+
+	input[type="checkbox"] + label:before {
+		border-radius: 4px;
+	}
+
+	input[type="radio"] + label:before {
+		border-radius: 100%;
+	}
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}			
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+	}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+	ol li {
+			padding-left: 0.25em;
+		}
+
+	ul li {
+		padding-left: 0.5em;
+	}
+	
+
+	.wrapper {
+		padding: 6em 0 4em 0;
+	}
+
+	.wrapper.style2 {
+			background: #e44c65;
+	}
+
+
+    /*lining and positioning nav bar/header*/
+	#header {
+		background: rgba(39, 40, 51, 0.965);
+		height: 3.5em;
+		left: 0;
+		line-height: 3.5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
+
+	#header h1 {
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		position: absolute;
+		top: 0;
+	}
+
+		#header nav {
+			position: absolute;
+			right: 1em;
+			top: 0;
+		}
+
+		#header nav ul {
+			margin: 0;
+		}
+
+		#header nav ul li a, #header nav ul li  {
+			border: 0;
+			color: inherit;
+			display: inline-block;
+			height: inherit;
+		    line-height: inherit;
+			outline: 0;
+			}
+
+					
+        #banner {
+	    	background-color: #272833;
+			background-image: url("../../images/banner.jpg");
+			background-position: center center;
+			background-size: cover;
+			box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+			min-height: 100vh;
+			position: relative;
+			text-align: center;
+	}
+
+
+		#banner .content header {
+			display: inline-block;
+			vertical-align: middle;
+	}
+
+				#banner .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+
+			    #banner .content .image {
+				    border-radius: 100%;
+				    display: inline-block;
+				    height: 18em;
+				    margin-left: 3em;
+				    vertical-align: middle;
+				    width: 18em;
+			}
+
+		#banner .content .image img {
+			border-radius: 100%;
+			display: block;
+			width: 100%;
+	}
+
+
+	#footer {
+		background: #272833;
+		padding: 6em 0;
+		text-align: center;
+	}
+
+		#footer .icons  {
+			text-decoration: none;
+		}
+
+
+		 /*Desktop view*/
+	@media screen and (max-width: 1280px) {
+		
+		.container {
+			width: 90%;
+		}
+		.row {
+			margin: 0 0 -1px -2.5em;
+		}
+		body, input, select, textarea {
+			font-size: 11.5pt;
+		}
+		.wrapper {
+			padding: 4.5em 0 2.5em 0;
+		}
+
+
+		#footer {
+			padding: 4.5em 0;
+		}
+
+	}
+/*Tablet*/
+	@media screen and (max-width: 980px) {
+
+		.container {
+			width: 100% !important;
+		
+		}
+		.row {
+			margin: 0 0 -1px -2.5em;
+		}
+
+		body, input, select, textarea {
+			font-size: 12pt;
+		}
+
+		.wrapper {
+			padding: 4.5em 2.5em 2.5em 2.5em;
+		}
+
+		
+		#footer {
+			padding: 4.5em 0;
+		}
+	}
+
+	
